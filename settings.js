@@ -1,10 +1,3 @@
-/**
-   * Made By Fandyyy 🕴️
-   * Subscribe FBOTZ YT
-   * Follow https://instagram.com/_nzrlafndi
-   * Follow https://github.com/FBOTZ-YT
-*/
-
 const fs = require('fs')
 const chalk = require('chalk')
 
