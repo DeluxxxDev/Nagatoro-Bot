@@ -1,11 +1,3 @@
-/**
-   * Made By Fandyyy 🕴️
-   * Subscribe FBOTZ YT
-   * Follow https://instagram.com/_nzrlafndi
-   * Follow https://github.com/FBOTZ-YT
-*/
-
-//Module 
 require('../settings')
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const axios = require('axios')
@@ -27,7 +19,7 @@ const qrcode = require('qrcode')
 const similarity = require('similarity')
 const yts = require('yt-search');
 
-//Waktu
+//Hora
 const time = moment().tz('America/Buenos_Aires').format("HH:mm:ss")
 const wib = moment.tz('America/Buenos_Aires').format('HH:mm:ss')
 const wita = moment.tz('America/Buenos_Aires').format("HH:mm:ss")
@@ -600,7 +592,7 @@ case 'setdesc': case 'setdesk': {
   if (!m.isGroup) return m.reply(mess.group)
   if (!isBotAdmins) return m.reply(mess.botAdmin)
   if (!isAdmins) return m.reply(mess.admin)
-  if (!text) return ''Y el texto?'
+  if (!text) return 'Y el texto?'
   await nagatoro.groupUpdateDescription(m.chat, text).then((res) => m.reply(mess.done)).catch((err) => m.reply(jsonformat(err)))
   }
   break
