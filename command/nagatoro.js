@@ -200,6 +200,40 @@ case 'menu': case 'help': case '?': {
 ╚════════
   
 ╔════════
+╠══ *ANIME*
+╠ ${prefix}waifu
+╠ ${prefix}cry
+╠ ${prefix}kill
+╠ ${prefix}hug
+╠ ${prefix}pat
+╠ ${prefix}lick
+╠ ${prefix}kiss
+╠ ${prefix}bite
+╠ ${prefix}yeet
+╠ ${prefix}neko
+╠ ${prefix}bully
+╠ ${prefix}bonk
+╠ ${prefix}wink
+╠ ${prefix}poke
+╠ ${prefix}nom
+╠ ${prefix}slap
+╠ ${prefix}smile
+╠ ${prefix}wave
+╠ ${prefix}awoo
+╠ ${prefix}blush
+╠ ${prefix}smug
+╠ ${prefix}glomp
+╠ ${prefix}happy
+╠ ${prefix}dance
+╠ ${prefix}cringe
+╠ ${prefix}cuddle
+╠ ${prefix}highfive
+╠ ${prefix}shinobu
+╠ ${prefix}megumin
+╠ ${prefix}handhold
+╚════════
+  
+╔════════
 ╠══ *MAKER*
 ╠ ${prefix}sticker
 ╠ ${prefix}toimg
@@ -670,7 +704,58 @@ case 'editinfo': {
   }
   break
 
-//Maker Menu
+//Anime
+case 'waifu':
+case 'cry':
+case 'kill':
+case 'hug':
+case 'pat':
+case 'lick':
+case 'kiss':
+case 'bite':
+case 'yeet':
+case 'neko':
+case 'bully':
+case 'bonk':
+case 'wink':
+case 'poke':
+case 'nom':
+case 'slap':
+case 'smile':
+case 'wave':
+case 'awoo':
+case 'blush':
+case 'smug':
+case 'glomp':
+case 'happy':
+case 'dance':
+case 'cringe':
+case 'cuddle':
+case 'highfive':
+case 'shinobu':
+case 'megumin':
+case 'handhold':{
+let ew = await fetchJson(`https:/\/\waifu.pics/api/sfw/${command}`)
+let buttons = [
+{
+ buttonId: `${prefix + command}`, 
+ buttonText: {
+displayText: 'SIGUIENTE'
+}, type: 1},
+]
+let buttonMessage = {
+image: { url: ew.url },
+caption: `Ramdom ${command}\nby Nagatoro-MD`,
+footer: `@DeluxxxDevolper`,
+buttons: buttons,
+headerType: 4
+ }
+ nagatoro.sendMessage(m.chat, buttonMessage, { quoted: itemss })
+}
+ break
+
+
+//Maker
 case 'sticker': case 's': case 'stickergif': case 'sgif': {
   if (!quoted) return m.reply(`Responde a un Video/Imagen con el comando ${prefix + command}`)
   if (/image/.test(mime)) {
