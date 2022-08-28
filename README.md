@@ -22,12 +22,20 @@
 [![CREADOR](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5493816565890) 
 [![GROUP BOT](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/DjMvgbtyeEeISyHN03n8JI) 
 ---------
-# Usar en heroku
+## Usar en heroku
 
 WhatsApp Bot Multi Device
 
 [![Alojar](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeluxxxDev/Nagatoro-MD)
 
+##Usar en termux
+comandos
+------------
+> sh install.sh
+> npm start
+-------------
+Escanea el qr y listo
+```
 
 # Heroku Buildpack
 
