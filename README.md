@@ -30,6 +30,7 @@ WhatsApp Bot Multi Device
 
 ##Usar en termux
 comandos
+```
 ------------
 > sh install.sh
 > npm start
