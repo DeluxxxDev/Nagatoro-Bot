@@ -42,7 +42,7 @@ Escanea el qr y listo
 
 | BuildPack | LINK |
 |--------|--------|
-| **FFMPEG** |[VER](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **FFMPEG** |[VER](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git) |
 | **IMAGEMAGICK** | [VER](https://github.com/mcollina/heroku-buildpack-imagemagick.git) |
 | **Node.js**     | heroku/nodejs|
 
