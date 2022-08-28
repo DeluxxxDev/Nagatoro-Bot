@@ -53,6 +53,6 @@ Escanea el qr y listo
 
 
 # Agradecimientos especiales
--    [`Nurutomo`](https://github.com/Nurutomo)
+-    [`Adiwajshing`](https://github.com/adiwajshing/Baileys)
 
 ---------
