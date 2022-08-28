@@ -178,7 +178,6 @@ break;
 
 case 'menu': case 'help': case '?': {
   let menu = `
-  
  _*NAGATORO-MD*_
   
 ╔════════
@@ -216,7 +215,6 @@ case 'menu': case 'help': case '?': {
 ╠══ *RANDOM*
 ╠ ${prefix}pinterest
 ╠ ${prefix}wallpaper
-╠ ${prefix}quotesanime
 ╠ ${prefix}wikimedia
 ╚════════
 
