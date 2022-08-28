@@ -34,8 +34,11 @@ WhatsApp Bot Multi Device
 comandos
 ```
 ------------
+> pkg update -y && pkg upgrade -y
+> pkg i git -y
+> git clone https://github.com/DeluxxxDev/Nagatoro-Bot
+> cd Nagatoro-MD
 > sh install.sh
-> npm start
 -------------
 Escanea el qr y listo
 ```
