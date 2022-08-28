@@ -28,7 +28,7 @@ WhatsApp Bot Multi Device
 
 [![Alojar](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeluxxxDev/Nagatoro-MD)
 
-##Usar en termux
+## Usar en termux
 comandos
 ```
 ------------
