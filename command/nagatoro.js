@@ -247,8 +247,6 @@ case 'menu': case 'help': case '?': {
 ╠ ${prefix}public
 ╠ ${prefix}eval
 ╚════════
-  
-
   `
   let but = [
   {"quickReplyButton": {"displayText": "Dueño","id": "owner"},},
@@ -933,8 +931,7 @@ displayText: 'Video'
 type: 1
 }]
 
-let txtplayuwu = `
-*----- PLAY YOUTUBE -----*
+let txtplayuwu = `*----- PLAY YOUTUBE -----*
   
   *Titulo :* 
 ( ${anu.title} )
@@ -950,7 +947,6 @@ let txtplayuwu = `
 ( ${anu.url} )
 
   _*Nagatoro-MD*_
-
 `
   let buttonMessage = {
   image: { url: anu.thumbnail },
