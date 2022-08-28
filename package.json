@@ -1,7 +1,7 @@
 {
-  "name": "ichigo-kurosaki",
+  "name": "Nagatoro-MD",
   "version": "1.0.0",
-  "description": "Bot Kok Wangsap",
+  "description": "Bot WA",
   "main": "connect/index.js",
   "type": "commonjs",
   "scripts": {
@@ -20,7 +20,7 @@
     "botmd",
     "bot-md"
   ],
-  "author": "Fandyyy",
+  "author": "Deluxxx",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
@@ -74,10 +74,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NzrlAfndi/Ichigo-Kurosaki.git"
+    "url": "git+https://github.com/DeluxxxDev/Nagatoro-Bot"
   },
   "bugs": {
-    "url": "https://github.com/NzrlAfndi/Ichigo-Kurosaki/issues"
+    "url": "https://github.com/DeluxxxDev/Nagatoro-Bot"
   },
-  "homepage": "https://github.com/NzrlAfndi/Ichigo-Kurosaki#readme"
+  "homepage": "https://github.com/DeluxxxDev/Nagatoro-Bot"
 }
