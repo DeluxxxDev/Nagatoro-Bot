@@ -1,7 +1,7 @@
 {
-	"name": "Ichigo Kurosaki",
-	"description": "WhatsApp Bot With Baileys Multi Device",
-	"repository": "https://github.com/NzrlAfndi/Ichigo-Kurosaki",
-	"logo": "https://node-js-sample.herokuapp.com/node.png",
+	"name": "Nagatoro-MD",
+	"description": "Bot de whatsapp usando bayleis",
+	"repository": "https://github.com/DeluxxxDev/Nagatoro-Bot",
+	"logo": "https://c4.wallpaperflare.com/wallpaper/227/985/292/nagatoro-hayase-manga-please-don-t-bully-me-nagatoro-hd-wallpaper-thumb.jpg",
 	"keywords": ["multi-device", "base"]
 }
