@@ -23,7 +23,7 @@
   "author": "Deluxxx",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.4.0",
+    "@adiwajshing/baileys":"git+https://github.com/neoxr/bails",
     "@adiwajshing/keyed-db": "latest",
     "@hapi/boom": "^10.0.0",
     "awesome-phonenumber": "^2.64.0",
