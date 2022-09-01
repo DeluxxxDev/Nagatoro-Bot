@@ -5,8 +5,8 @@ const chalk = require('chalk')
 global.ownerNumber = ['5493816565890']
 global.ownerName = 'Deluxxx'
 global.packname = ''
-global.author = 'Nagaroto-MD'
-global.prefa = ['','!','.','#','!']
+global.author = 'Itsuki-MD'
+global.prefa = ['/','','!','.','#','!']
 global.sessionName = 'qr'
 
 //Mensajes frecuentes UwU
@@ -22,10 +22,11 @@ done: 'Listo sempai!'
 
 
 //Fotos del bot
-global.thumb = fs.readFileSync('./media/thumb.jpg')
-global.thumblink = "https://c4.wallpaperflare.com/wallpaper/227/985/292/nagatoro-hayase-manga-please-don-t-bully-me-nagatoro-hd-wallpaper-thumb.jpg"
-global.icon = { url: "https://i.pinimg.com/736x/c3/bb/22/c3bb22734e6ad8da8ef4c09a6c84c0a0.jpg"}
-global.iconlink = "https://i.pinimg.com/736x/c3/bb/22/c3bb22734e6ad8da8ef4c09a6c84c0a0.jpg"
+global.thumb0 = fs.readFileSync('./media/thumb.jpg')
+global.thumb = fs.readFileSync('./media/ituski.jpg')
+global.thumblink = "https://telegra.ph/file/878a97bf1aa9c155ad1a4.jpg"
+global.icon = { url: "https://telegra.ph/file/6b9bd1dfda9cd4e0edac2.jpg"}
+global.iconlink = "https://telegra.ph/file/6b9bd1dfda9cd4e0edac2.jpg"
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
