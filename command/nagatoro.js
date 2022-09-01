@@ -178,7 +178,7 @@ break;
 
 case 'menu': case 'help': case '?': {
   let menu = `
- _*NAGATORO-MD*_
+ _*ITSUKI-MD*_
   
 ╔════════
 ╠══ *GRUPO*
