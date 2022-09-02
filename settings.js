@@ -23,7 +23,7 @@ done: 'Listo sempai!'
 
 //Fotos del bot
 global.thumb0 = fs.readFileSync('./media/thumb.jpg')
-global.thumb = fs.readFileSync('./media/ituski.jpg')
+global.thumb = fs.readFileSync('./media/itsuki.jpg')
 global.thumblink = "https://telegra.ph/file/878a97bf1aa9c155ad1a4.jpg"
 global.icon = { url: "https://telegra.ph/file/6b9bd1dfda9cd4e0edac2.jpg"}
 global.iconlink = "https://telegra.ph/file/6b9bd1dfda9cd4e0edac2.jpg"
