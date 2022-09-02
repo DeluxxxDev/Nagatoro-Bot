@@ -873,7 +873,7 @@ case 'pinterest': {
   buttons: buttons,
   headerType: 4,
   contextInfo :{externalAdReply: {
-  title: "© Nagatoro-MD",
+  title: "© Itsuki-MD",
   mediaType: 1,
   renderLargerThumbnail: true,
   showAdAttribution: true,
@@ -909,7 +909,7 @@ case 'wikimedia': {
   buttons: buttons,
   headerType: 4,
   contextInfo :{externalAdReply: {
-  title: "© Nagatoro-MD",
+  title: "© Itsuki-MD",
   mediaType: 1,
   renderLargerThumbnail: true,
   showAdAttribution: true,
@@ -956,7 +956,7 @@ case 'ytmp3': case 'ytaudio': case 'yta': {
   {
   text: caption, 
   contextInfo :{externalAdReply: {
-  title: "© Nagatoro-MD",
+  title: "© Itsuki-MD",
   mediaType: 1,
   renderLargerThumbnail: true,
   showAdAttribution: true,
@@ -1031,16 +1031,16 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
   *Link del video :* 
 ( ${anu.url} )
 
-  _*Nagatoro-MD*_
+  _*Itsuki-MD*_
 `
-  let buttonMessage = {
+  let buttonMessage 
   image: { url: anu.thumbnail },
   caption: txtplayuwu,
   footer: global.ownerName,
   buttons: buttons,
   headerType: 4,
   contextInfo :{externalAdReply: {
-  title: "© Nagatoro-MD",
+  title: "© Itsuki-MD",
   mediaType: 1,
   renderLargerThumbnail: true,
   showAdAttribution: true,
