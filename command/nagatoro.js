@@ -1033,7 +1033,7 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
 
   _*Itsuki-MD*_
 `
-  let buttonMessage 
+  let buttonMessage = {
   image: { url: anu.thumbnail },
   caption: txtplayuwu,
   footer: global.ownerName,
