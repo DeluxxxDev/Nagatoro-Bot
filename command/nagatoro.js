@@ -998,11 +998,11 @@ case 'yts': case 'ytsearch': {
   }
   break
 case 'play2':
-  const consulta = (text)
+  const consulta = (q)
                try {
                var busquedayt = await yts(consulta);
                } catch {
-               return await nagatoro.sendMessage(m.chat, {text: 'Ejemplo: .play Joji - Ew'}, {quoted: itemss })
+               return await nagatoro.sendMessage(from, {text: 'Ejemplo: .play Joji - Ew'}, {quoted: m })
                }
 					const objs = []
 					for (let d of busquedayt.all) {
@@ -1014,7 +1014,7 @@ case 'play2':
 						objs.push(data)
 					}
 
-const listMessage = {
+const listMessagees = {
   text: `*Consulta:* ${text}`,
   footer: 'Puedes elejir aqui, seleciona un opción y toque en enviar',
   title: "*RESULTADOS*",
@@ -1026,7 +1026,7 @@ const listMessage = {
 								}
 							]
 }
-sendMsg = await nagatoro.sendMessage(m.chat, listMessage, {quoted: itemss})
+sendMsg = await nagatoro.sendMessage(m.chat, listMessagees, {quoted:m})
 break
 case 'play':
   if (!text) return `Ejemplo : ${prefix + command} Joji - Ew`
