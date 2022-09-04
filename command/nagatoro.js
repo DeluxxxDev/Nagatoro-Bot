@@ -997,7 +997,7 @@ case 'yts': case 'ytsearch': {
   { quoted: itemss })
   }
   break
-case 'play2':{
+/*case 'play2':{
   const consulta = (q)
                try {
                var yts = require("yt-search")
@@ -1029,7 +1029,7 @@ const listMessagees = {
 }
 sendMsg = await nagatoro.sendMessage(m.chat, listMessagees, {quoted:m})
 }
-break
+break*/
 case 'play':
   if (!text) return `Ejemplo : ${prefix + command} Joji - Ew`
   let yts = require("yt-search")
@@ -1043,11 +1043,11 @@ displayText: 'Audio'
 buttonId: `ytmp4 ${anu.url}`,
 buttonText: {
 displayText: 'Video'
-},type: 1}, {
+},type: 1}/*, {
 buttonId: `play2 ${text}`, 
 buttonText: {
 displayText: 'Mas resultados'
-},type: 1}]
+},type: 1}*/]
 
 let txtplayuwu = `*----- PLAY YOUTUBE -----*
   
