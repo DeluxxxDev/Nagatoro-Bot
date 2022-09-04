@@ -997,7 +997,7 @@ case 'yts': case 'ytsearch': {
   { quoted: itemss })
   }
   break
-case 'play2':
+case 'play2':{
   const consulta = (q)
   let yts = require("yt-search")
                try {
@@ -1028,6 +1028,7 @@ const listMessagees = {
 							]
 }
 sendMsg = await nagatoro.sendMessage(m.chat, listMessagees, {quoted:m})
+}
 break
 case 'play':
   if (!text) return `Ejemplo : ${prefix + command} Joji - Ew`
