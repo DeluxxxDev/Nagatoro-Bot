@@ -999,8 +999,8 @@ case 'yts': case 'ytsearch': {
   break
 case 'play2':{
   const consulta = (q)
-  let yts = require("yt-search")
                try {
+               var yts = require("yt-search")
                var busquedayt = await yts(consulta);
                } catch {
                return await nagatoro.sendMessage(from, {text: 'Ejemplo: .play Joji - Ew'}, {quoted: m })
