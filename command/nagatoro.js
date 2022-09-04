@@ -997,6 +997,37 @@ case 'yts': case 'ytsearch': {
   { quoted: itemss })
   }
   break
+case 'play2':
+  const consulta = (text)
+               try {
+               var busquedayt = await yts(consulta);
+               } catch {
+               return await nagatoro.sendMessage(m.chat, {text: 'Ejemplo: .play Joji - Ew'}, {quoted: itemss })
+               }
+					const objs = []
+					for (let d of busquedayt.all) {
+						let data = {
+							rowId: `${prefix}ytmp3 `+ d.url,
+							title: `${d.title} | ${d.timestamp}`,
+							description: d.description
+						}
+						objs.push(data)
+					}
+
+const listMessage = {
+  text: `*Consulta:* ${text}`,
+  footer: 'Puedes elejir aqui, seleciona un opción y toque en enviar',
+  title: "*RESULTADOS*",
+  buttonText: "click",
+  sections: [
+								{
+									title: "RESULTADOS DE CONSULTA",
+									rows: objs
+								}
+							]
+}
+sendMsg = await nagatoro.sendMessage(m.chat, listMessage, {quoted: itemss})
+break
 case 'play':
   if (!text) return `Ejemplo : ${prefix + command} Joji - Ew`
   let yts = require("yt-search")
@@ -1006,15 +1037,15 @@ let buttons = [{
 buttonId: `ytmp3 ${anu.url}`,
 buttonText: {
 displayText: 'Audio'
-},
-type: 1
-}, {
-buttonId: `ytmp4 ${anu.url}`, 
+},type: 1},{
+buttonId: `ytmp4 ${anu.url}`,
 buttonText: {
 displayText: 'Video'
-},
-type: 1
-}]
+},type: 1}, {
+buttonId: `play2 ${text}`, 
+buttonText: {
+displayText: 'Mas resultados'
+},type: 1}]
 
 let txtplayuwu = `*----- PLAY YOUTUBE -----*
   
