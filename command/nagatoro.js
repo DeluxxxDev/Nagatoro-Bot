@@ -999,6 +999,7 @@ case 'yts': case 'ytsearch': {
   break
 case 'play2':
   const consulta = (q)
+  let yts = require("yt-search")
                try {
                var busquedayt = await yts(consulta);
                } catch {
@@ -1034,11 +1035,11 @@ case 'play':
   let search = await yts(text)
   let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 let buttons = [{
-buttonId: `ytmp3 ${anu.url}`,
+buttonId: `ytmp3 ${anu.url[0]}`,
 buttonText: {
 displayText: 'Audio'
 },type: 1},{
-buttonId: `ytmp4 ${anu.url}`,
+buttonId: `ytmp4 ${anu.url[0]}`,
 buttonText: {
 displayText: 'Video'
 },type: 1}, {
@@ -1050,22 +1051,22 @@ displayText: 'Mas resultados'
 let txtplayuwu = `*----- PLAY YOUTUBE -----*
   
   *Titulo :* 
-( ${anu.title} )
+( ${anu.title[0]} )
   *Duracion :* 
-( ${anu.timestamp} )
+( ${anu.timestamp[0]} )
   *Vistas :* 
-( ${anu.views} )
+( ${anu.views[0]} )
   *Fecha de subida :* 
-( ${anu.ago} )
+( ${anu.ago[0]} )
   *Canal :* 
-( ${anu.author.url} )
+( ${anu.author.url[0]} )
   *Link del video :* 
-( ${anu.url} )
+( ${anu.url[0]} )
 
   _*Itsuki-MD*_
 `
   let buttonMessage = {
-  image: { url: anu.thumbnail },
+  image: { url: anu.thumbnail[0] },
   caption: txtplayuwu,
   footer: global.ownerName,
   buttons: buttons,
@@ -1077,7 +1078,7 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
   showAdAttribution: true,
   body: `Elije para audio o video uwu`,
   thumbnail: await getBuffer(`${global.thumblink}`),
-  sourceUrl: anu.url,
+  sourceUrl: anu.url[0],
   }}
   }
   nagatoro.sendMessage(m.chat, buttonMessage, { quoted: itemss })
