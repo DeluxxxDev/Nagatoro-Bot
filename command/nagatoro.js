@@ -1083,7 +1083,8 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
   }}
   }
   nagatoro.sendMessage(m.chat, buttonMessage, { quoted: itemss })
-  breakcase 'manualbot': {
+  break
+	case 'manualbot': {
 
 let buttonsayuda = [
 
