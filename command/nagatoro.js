@@ -1083,7 +1083,35 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
   }}
   }
   nagatoro.sendMessage(m.chat, buttonMessage, { quoted: itemss })
-  break
+  breakcase 'manualbot': {
+
+let buttonsayuda = [
+
+{ buttonId: `aceptarayuda`, buttonText: { displayText: 'Si' }, type: 1 },
+
+{ buttonId: `negarayuda`, buttonText: { displayText: 'No, Gracias' }, type: 1 }
+
+]
+
+await nagatoro.sendButtonText(m.chat, buttonsayuda, `Hola ${pushname}, nececitas ayuda con el bot?, si la necesitas toca el boton de abajo\n`, `Puedes elejir aqui abajo sempai`, itemss)
+
+}
+
+break
+
+case 'aceptarayuda': {
+
+reply(`Mis comandos son de los mas simples\nPara ver todos mis comandos use #menu\nSi quieres hacer un sticker usa el comando #sticker\nmarcando una imagen o un video de 10 segundos\nsi quieres descargar una canción usa el comando #play\ny pon el titulo de la canción que buscas, podras descargar videos y música\nel play no busca su canción?\nusa estos siguientes comandos\n#ytmp3 *Link de YouTube* para música\n#ytmp4 *Link de YouTube* para video\nbuscas una imagen? un fondo de pantalla?\nUsa el comando #pinterest y su consulta\nsi quieres saber mas usa el comando #owner para hablar con mi creador`)
+
+}
+
+break
+
+case 'negarayuda':
+
+reply("Bien ^-^, tenga una buena tarde, noche, mañana~")
+
+break
 
 //Eval
 default:
