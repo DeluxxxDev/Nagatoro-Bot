@@ -120,7 +120,7 @@ console.log(err)
 })
 
 //Group Update
-/*nagatoro.ev.on('group-participants.update', async (anu) => {
+nagatoro.ev.on('group-participants.update', async (anu) => {
 console.log(anu)
 try {
 let metadata = await nagatoro.groupMetadata(anu.id)
@@ -132,16 +132,16 @@ ppuser = await nagatoro.profilePictureUrl(num, 'image')
 ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
 if (anu.action == 'add') {
-tekswell = `Welcome @${num.split('@')[0]} To ${metadata.subject} 👋`
+tekswell = `Hola @${num.split('@')[0]} Bienvenid@ a ${metadata.subject} 👋`
 nagatoro.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: tekswell })
 } else if (anu.action == 'remove') {
 teksbye = `Sayonaraa @${num.split("@")[0]} 👋`
 nagatoro.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: teksbye })
 } else if (anu.action == 'promote') {
-tekspromo = `Selamat Ya @${num.split("@")[0]} Atas Kenaikan Jabatannya Di Grup ${metadata.subject} 🎉`
+tekspromo = `Felicidades @${num.split("@")[0]} Ahora eres admin del grupo ${metadata.subject} 🎉`
 nagatoro.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: tekspromo })
 } else if (anu.action == 'demote') {
-teksdemo = `Nice Try @${num.split("@")[0]} Atas Penurunan Jabatannya Di Grup ${metadata.subject} 😔`
+teksdemo = `@${num.split("@")[0]} Ya no es admin del grupo ${metadata.subject} 😔`
 nagatoro.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: teksdemo })
 }
 }
@@ -182,7 +182,7 @@ nagatoro.ev.on("message.delete", async (m) => {
 		}
 	  
 
-	});*/
+	});
 
 //Connection Active
 
