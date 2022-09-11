@@ -281,6 +281,7 @@ case 'menu': case 'help': case '?': {
 ╠ ${prefix}public
 ╠ ${prefix}eval
 ╚════════
+@ DuMor23 | Itsuki-MD
   `
   let but = [
   {"quickReplyButton": {"displayText": "Dueño","id": "owner"},},
@@ -356,7 +357,7 @@ case 'bcgc': case 'bcgroup': {
   //Bc Image
   if (/image/.test(mime)) {
   await sleep(1500)
-  var txtbc = `*Broadcast ${nagatoro.user.name}*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
+  var txtbc = `*Difusión*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
   var btnbc = [{ buttonId: `y`, buttonText: { displayText: `${global.ownerName}` }, type: 1 }]
   let media = await nagatoro.downloadAndSaveMediaMessage(quoted)
   let url = await TelegraPh(media)
@@ -366,7 +367,7 @@ case 'bcgc': case 'bcgroup': {
   //Bc Video
   } else if (/video/.test(mime)) {
   await sleep(1500)
-  var txtbc = `*Broadcast ${nagatoro.user.name}*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
+  var txtbc = `*Broadcast*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
   var btnbc = [{ buttonId: `y`, buttonText: { displayText: `${global.ownerName}` }, type: 1 }]
   let media = await nagatoro.downloadAndSaveMediaMessage(quoted)
   let url = await TelegraPh(media)
@@ -375,11 +376,11 @@ case 'bcgc': case 'bcgroup': {
   if (fs.existsSync(media)) fs.unlinkSync(media)
   } else {
   await sleep(1500)
-  var txtbc = `*Broadcast ${nagatoro.user.name}*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
+  var txtbc = `*Broadcast*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
   var btnbc = [{ buttonId: `y`, buttonText: { displayText: `${global.ownerName}` }, type: 1 }]
   await nagatoro.sendButtonText(i, btnbc, txtbc, '', fdoc)
   }
-  m.reply('Sukses Broadcast')
+    reply('Listo DuMor23 sempai uwu')
   }
   }
   break
@@ -392,7 +393,7 @@ case 'bc': case 'broadcast': case 'bcall': {
   //Bc Image
   if (/image/.test(mime)) {
   await sleep(1500)
-  var txtbc = `*Broadcast ${nagatoro.user.name}*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
+  var txtbc = `*Broadcast*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
   var btnbc = [{ buttonId: `y`, buttonText: { displayText: `${global.ownerName}` }, type: 1 }]
   let media = await nagatoro.downloadAndSaveMediaMessage(quoted)
   let url = await TelegraPh(media)
@@ -402,7 +403,7 @@ case 'bc': case 'broadcast': case 'bcall': {
   //Bc Video
   } else if (/video/.test(mime)) {
   await sleep(1500)
-  var txtbc = `*Broadcast ${nagatoro.user.name}*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
+  var txtbc = `*Broadcast*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
   var btnbc = [{ buttonId: `y`, buttonText: { displayText: `${global.ownerName}` }, type: 1 }]
   let media = await nagatoro.downloadAndSaveMediaMessage(quoted)
   let url = await TelegraPh(media)
@@ -411,7 +412,7 @@ case 'bc': case 'broadcast': case 'bcall': {
   if (fs.existsSync(media)) fs.unlinkSync(media)
   } else {
   await sleep(1500)
-  var txtbc = `*Broadcast ${nagatoro.user.name}*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
+  var txtbc = `*Broadcast*\n\n*✉️ Mensaje :* ${q? q : ''}\n`
   var btnbc = [{ buttonId: `y`, buttonText: { displayText: `${global.ownerName}` }, type: 1 }]
   await nagatoro.sendButtonText(yoi, btnbc, txtbc, '', fdoc)
   }
