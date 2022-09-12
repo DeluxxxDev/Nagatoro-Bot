@@ -1087,7 +1087,7 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
   break
 
 case 'botinfo': {
-var messa = await prepareWAMessageMedia({ image: global.thumb }, { upload: nagatoto.waUploadToServer })
+var messa = await prepareWAMessageMedia({ image: global.thumb }, { upload: nagatoro.waUploadToServer })
 var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productMessage": {
 "product": {
