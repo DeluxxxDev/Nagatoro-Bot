@@ -1085,6 +1085,38 @@ let txtplayuwu = `*----- PLAY YOUTUBE -----*
   }
   nagatoro.sendMessage(m.chat, buttonMessage, { quoted: itemss })
   break
+
+case 'botinfo': {
+var messa = await prepareWAMessageMedia({ image: global.thumb }, { upload: nagatoto.waUploadToServer })
+var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"productMessage": {
+"product": {
+"productImage": messa.imageMessage,
+"productId": "449756950375071",
+"title": ` © Hola ${pushname} 👋 `,
+"description": ` - © Itsuki•MD -
+
+◎ Creador : Deluxxx
+◎ Lib : Baileys Multi-Device
+◎ Versión : 1.0.0
+
+POR FAVOR, ESCRIBE MENÚ PARA UTILIZAR MÁS EL BOTT ✌️`,
+"currencyCode": "IDR",
+"footerText": ` `,
+"priceAmount1000": "10000000",
+"productImageCount": 1,
+"firstImageId": 1,
+"salePriceAmount1000": "10000000",
+"retailerId": `© ItsukiBot•MD`,
+"url": "Wa.me/0"
+},
+"businessOwnerJid": "0@s.whatsapp.net",
+}
+}), { userJid: m.chat, quoted: m })
+nagatoro.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
+}
+break
+
 	case 'manualbot': {
 
 let buttonsayuda = [
