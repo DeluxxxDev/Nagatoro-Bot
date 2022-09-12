@@ -2,7 +2,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //Cofinguracion del bot :v
-global.ownerNumber = ['584140186784']
+global.ownerNumber = ['5493865295530']
 global.ownerName = 'DuMor23'
 global.packname = ''
 global.author = 'Itsuki-MD'
